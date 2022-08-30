@@ -1,0 +1,7 @@
+class Solution:
+    def eraseOverlapIntervals(self, intervals):
+        intervals.sort(key = lambda x: x.end); res, curr = 0, -float("inf")
+        for i in intervals:
+            if curr > i.start: res += 1
+            else: curr = i.end
+        return res
