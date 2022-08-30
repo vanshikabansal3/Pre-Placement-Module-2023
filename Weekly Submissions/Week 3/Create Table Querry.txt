@@ -1,0 +1,9 @@
+Q) Create a SQL table called customers that stores customer ID, name, and address information.
+CREATE TABLE customers
+( customer_id int NOT NULL,
+  customer_name char(50) NOT NULL,
+  address char(50),
+  city char(50),
+  state char(25),
+  zip_code char(10)
+);
